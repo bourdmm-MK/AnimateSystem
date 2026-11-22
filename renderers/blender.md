@@ -8,12 +8,33 @@ script `models/<name>/build.py` that builds the scene from empty.
 
 - **Physics-question scenes** (a system from a question): the course style.
   Use `physkit.style` — `COURSE["velocity"]`, `COURSE["structure"]`… for
-  colours, `label_font()` for serif italic labels, and finish with
+  colours — and finish with
   `physkit.finish(scene, name, args, style="question")` (flat colours on black).
   Use an orthographic front camera when reproducing a 2D figure.
 - **3D object models** (a realistic pendulum, a cart): realistic materials from
   `physkit/materials.py`. Labels, vectors and axes added to them still follow
   the course colours.
+
+## Lettering — the same font as Manim
+
+Use `physkit/latex.py`, so labels look exactly like the Manim ones:
+
+- `tex(body, em, color, loc)` — runs real LaTeX (MiKTeX + dvisvgm) and imports
+  the result as a flat curve facing the camera (−y). Cached in `output/_tex`.
+  Use it for every symbol and equation (`m_1`, `\vec v`, `\theta`…).
+- `manim_em(font_size, frame_width_m)` — the letter size that matches a Manim
+  `font_size` for a camera of that width (measured: 1 em = 0.4979 Manim units
+  at `font_size` 48).
+- `number(text, em, color, loc)` — a changing readout (like Manim's
+  `DecimalNumber`) in Latin Modern, `C:\Windows\Fonts\lmroman10-regular.otf`;
+  update it through `obj.data.body`.
+
+Known quirks:
+- LaTeX's `\times` imports badly — use the font's × character instead.
+- Latin Modern text has no Greek letters, so θ, ω… must come from `tex()`.
+- `label_font()` (Times italic) is only a **fallback** when LaTeX is missing.
+
+Example: `models/wedge_ramp_q2/build.py`.
 
 ## From a scene spec
 

@@ -18,8 +18,9 @@ Break a rule only when the user asks for something different for that piece of w
 
 - **Background: black** (Manim's default, `#000000`).
 - **Math and labels look like LaTeX** (Computer Modern, italic for symbols):
-  `MathTex`/`Tex` in Manim; KaTeX/MathJax or a serif italic in HTML/SVG; the
-  closest serif italic font in Blender. Subscripts are real subscripts (`m_1`, `y_2`).
+  `MathTex`/`Tex` in Manim; KaTeX/MathJax in HTML/SVG; real LaTeX in Blender
+  (`physkit/latex.py`, Latin Modern for changing numbers). Serif italic
+  (Times) only as a fallback when LaTeX is unavailable. Subscripts are real subscripts (`m_1`, `y_2`).
 - **No handwriting fonts** — not on whiteboards either — unless the user asks.
 - Sizes (Manim, 1080p frame): headers `font_size = 40`, definitions and
   equations `def_font_size = 36`; labels inside small bodies scale to fit.
@@ -82,7 +83,8 @@ negative charge blue**; on whiteboard cards **knowns green, unknowns red**.
   (`position_color`, `velocity_color`, `axes_color`, `def_color`, `font_size`…)
   instead of redefining them.
 - **Blender (BlenderPhysics):** black world background, colours from the table,
-  serif italic text objects, orthographic front camera when reproducing a 2D
+  LaTeX labels from `physkit/latex.py` sized with `manim_em()` to match Manim
+  (details: [`../renderers/blender.md`](../renderers/blender.md)), orthographic front camera when reproducing a 2D
   question figure.
 - **HTML/SVG whiteboards (PhysicsLearn):** black canvas, colours from the table,
   KaTeX/MathJax (or serif italic) for every symbol.

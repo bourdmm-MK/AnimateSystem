@@ -22,7 +22,8 @@
   },
   "fonts": {
     "math": "LaTeX Computer Modern, italic symbols (MathTex/Tex in Manim, KaTeX/MathJax in HTML)",
-    "fallback_serif_italic": "Times New Roman Italic (C:\\Windows\\Fonts\\timesi.ttf)",
+    "blender": "real LaTeX via physkit/latex.py tex(); changing numbers in Latin Modern (C:\\Windows\\Fonts\\lmroman10-regular.otf, size x1.42)",
+    "fallback_serif_italic":"Times New Roman Italic (C:\\Windows\\Fonts\\timesi.ttf)",
     "handwriting": "never, unless the user asks"
   },
   "sizes_manim_1080p": {

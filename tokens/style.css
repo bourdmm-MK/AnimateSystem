@@ -24,3 +24,5 @@
 
 body { background: var(--bg); color: var(--aux); font-family: var(--math-font); }
 .math, svg text { font-family: var(--math-font); font-style: italic; }
+/* KaTeX inside Hebrew (RTL) cards renders mirrored without this. */
+.katex { direction: ltr; unicode-bidi: isolate; }
