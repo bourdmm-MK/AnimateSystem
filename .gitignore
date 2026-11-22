@@ -1,0 +1,14 @@
+# No media in this repository
+*.mp4
+*.mov
+*.avi
+*.webm
+*.gif
+*.wav
+*.mp3
+*.blend
+*.blend1
+media/
+output/
+__pycache__/
+.DS_Store

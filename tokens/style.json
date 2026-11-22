@@ -1,0 +1,32 @@
+{
+  "_about": "Machine-readable copy of style/visual-style.md. Colours are sRGB hex. Keep in step with PhAid_scene_toolbox.py (PhysicsAid) and physkit/style.py (BlenderPhysics).",
+  "background": "#000000",
+  "colors": {
+    "position":      { "hex": "#58C4DD", "manim": "BLUE" },
+    "displacement":  { "hex": "#FF862F", "manim": "ORANGE" },
+    "distance":      { "hex": "#D147BD", "manim": "PINK" },
+    "velocity":      { "hex": "#F7D96F", "manim": "YELLOW" },
+    "acceleration":  { "hex": "#5CD0B3", "manim": "TEAL" },
+    "axes":          { "hex": "#83C167", "manim": "GREEN" },
+    "aux":           { "hex": "#DDDDDD", "manim": "GRAY_A", "use": "definitions, helper text, dashed guide lines" },
+    "time":          { "hex": "#FFFFFF", "manim": "WHITE" },
+    "force":         { "hex": "#FC6255", "manim": "RED", "use": "g and forces" },
+    "structure":     { "hex": "#BBBBBB", "manim": "GREY_B", "use": "slopes, floor, walls, strings, springs" },
+    "body_fill":     { "hex": "#C8BD99" },
+    "body_outline":  { "hex": "#222222", "manim": "GREY_E" },
+    "body_text":     { "hex": "#000000", "manim": "BLACK" },
+    "charge_positive": { "hex": "#FC6255", "manim": "RED" },
+    "charge_negative": { "hex": "#58C4DD", "manim": "BLUE" },
+    "known":         { "hex": "#83C167", "manim": "GREEN", "use": "whiteboard givens cards" },
+    "unknown":       { "hex": "#FC6255", "manim": "RED", "use": "whiteboard unknowns cards" }
+  },
+  "fonts": {
+    "math": "LaTeX Computer Modern, italic symbols (MathTex/Tex in Manim, KaTeX/MathJax in HTML)",
+    "fallback_serif_italic": "Times New Roman Italic (C:\\Windows\\Fonts\\timesi.ttf)",
+    "handwriting": "never, unless the user asks"
+  },
+  "sizes_manim_1080p": {
+    "header": 40,
+    "definition_and_equation": 36
+  }
+}

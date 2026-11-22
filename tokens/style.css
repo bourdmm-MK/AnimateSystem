@@ -1,0 +1,26 @@
+/* Course colours as CSS variables, for HTML/SVG whiteboards.
+   Copy of tokens/style.json — keep the two in step. */
+:root {
+  --bg: #000000;
+  --position: #58C4DD;
+  --displacement: #FF862F;
+  --distance: #D147BD;
+  --velocity: #F7D96F;
+  --acceleration: #5CD0B3;
+  --axes: #83C167;
+  --aux: #DDDDDD;          /* definitions, helper text, dashed guide lines */
+  --time: #FFFFFF;
+  --force: #FC6255;        /* g and forces */
+  --structure: #BBBBBB;    /* slopes, floor, walls, strings, springs */
+  --body-fill: #C8BD99;
+  --body-outline: #222222;
+  --body-text: #000000;
+  --charge-pos: #FC6255;
+  --charge-neg: #58C4DD;
+  --known: #83C167;
+  --unknown: #FC6255;
+  --math-font: "KaTeX_Main", "Latin Modern Math", "Cambria Math", "Times New Roman", serif;
+}
+
+body { background: var(--bg); color: var(--aux); font-family: var(--math-font); }
+.math, svg text { font-family: var(--math-font); font-style: italic; }
