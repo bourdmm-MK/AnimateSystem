@@ -23,6 +23,12 @@ parts (session whiteboards, teach/solve modes).
 
 - **Never hide information.** Nothing may cover a given, label or angle mark.
   Move labels into clear space; an angle label goes inside its angle.
+- **A label never sits on or touches any line** — not a field line, axis, vector,
+  guide line or outline — and no line runs through it (user rule, 2026-11-24; this
+  mistake was repeated, so it is checked explicitly). Place each label in open space
+  between lines, close to what it names. Whenever a label is placed or **moved**,
+  check its whole box against **every** line around it, not only the object it was
+  moved away from.
 - **Axes contain the drawing** — the whole trajectory and every arrow.
 - **Draw only what the step needs.** One vector per quantity at the object of
   interest; no decorative field-line forests unless the spatial picture is
@@ -50,7 +56,8 @@ explicit coordinate (SVG, Manim, Blender).
 
 1. **Physical correctness** — tails on bodies, directions true, geometry
    matches the question.
-2. **Nothing hidden** — every given, label and angle mark readable.
+2. **Nothing hidden** — every given, label and angle mark readable; go through
+   the labels one by one and confirm none touches or crosses a line.
 3. **Bounds** — the frame and axes contain everything.
 4. Only then **looks** — colours, fonts and shapes from
    [`visual-style.md`](visual-style.md).

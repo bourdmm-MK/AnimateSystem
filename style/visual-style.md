@@ -21,6 +21,16 @@ Break a rule only when the user asks for something different for that piece of w
   `MathTex`/`Tex` in Manim; KaTeX/MathJax in HTML/SVG; real LaTeX in Blender
   (`physkit/latex.py`, Latin Modern for changing numbers). Serif italic
   (Times) only as a fallback when LaTeX is unavailable. Subscripts are real subscripts (`m_1`, `y_2`).
+- **Vectors carry an arrow** (`\vec v`, `\vec B`, `\vec F`) wherever the symbol means
+  the vector — labels on arrows, vector equations (`\vec F = q\,\vec v \times \vec B`),
+  components (`\vec v = (3.2,\,2.4,\,0)`). A **magnitude has no arrow** (`F = qvB\sin\alpha`,
+  `v = 4\cdot10^7` m/s). Unit vectors get a hat (`\hat z`). (User rule, 2026-11-24.)
+- **HTML whiteboards really load KaTeX** (CSS + JS + auto-render from a CDN) and typeset
+  every symbol with it — card text, equations and the labels in the 3D scene
+  (`katex.renderToString`). Listing a KaTeX font in CSS without loading KaTeX is not
+  enough: it silently falls back to Times/Cambria. In right-to-left (Hebrew) text, keep
+  each formula left-to-right and unbroken (`.katex{direction:ltr; unicode-bidi:isolate;
+  white-space:nowrap}`), and put multi-step calculations on their own left-to-right lines.
 - **No handwriting fonts** — not on whiteboards either — unless the user asks.
 - Sizes (Manim, 1080p frame): headers `font_size = 40`, definitions and
   equations `def_font_size = 36`; labels inside small bodies scale to fit.
@@ -74,7 +84,10 @@ heading (collision_pi uses teal). The "distance from the goal" readout
 - **Guide lines** (projections, distances, dimensions): dashed, `GRAY_A`,
   behind the objects.
 - **Charges:** circles marked + (red) or − (blue). Field into the page ×, out
-  of the page ⊙.
+  of the page ⊙. When a direction symbol (⊗/⊙, e.g. the force into the page) or another
+  vector is drawn on top of a charge or body at the same spot, make the body **faint**
+  (opacity ≈0.1, its +/− mark hidden) while the symbol is shown, so the symbol reads clearly; fully transparent
+  only when absolutely necessary. (User rule, 2026-11-24.)
 - **Axes:** green, with arrow heads, behind everything, sized to contain the
   whole drawing.
 
