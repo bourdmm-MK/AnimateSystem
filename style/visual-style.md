@@ -46,6 +46,18 @@ Use the Manim colour constants by name; hex values are for HTML and Blender.
 Kept from PhysicsLearn, they do not clash with the table: **positive charge red,
 negative charge blue**; on whiteboard cards **knowns green, unknowns red**.
 
+**Contrast between bodies (Marianna, 2026-11-23).** Sand is right for a single
+body. When two or more bodies are compared (a light and a heavy block, m₁ and m₂…),
+give each one its **own strong colour** (e.g. big `M` blue `#58C4DD`, small `m`
+yellow `#F7D96F`) and colour **its symbol the same way everywhere** (in M/m, on axis
+names, in equations). Labels inside the bodies stay black. All-sand scenes look
+too bland.
+
+**One colour for the goal.** A target value the video is about (π, g, a final
+answer) gets one colour used everywhere it appears: title, readout, graph
+heading (collision_pi uses teal). The "distance from the goal" readout
+(off by … %) is orange, like displacement.
+
 ## Shapes
 
 - **Bodies** (blocks, carts, masses): rectangles or squares with fill
@@ -76,6 +88,56 @@ negative charge blue**; on whiteboard cards **knowns green, unknowns red**.
   [`diagram-rules.md`](diagram-rules.md)).
 - A "whiteboard" means building the picture step by step (drawing it in, then
   adding to it) — **in this same style**, not a white background or handwriting.
+
+Marianna's preferences from review rounds (2026-11-23, collision_pi reel):
+
+- **Text big enough to read on a phone.** When in doubt, larger. Keep bodies
+  (blocks) large in the frame too; small boxes read as "too small".
+- **Related things are aligned.** A number sits on the **same baseline** as its
+  label ("Collisions: 181"), only slightly larger than the label for emphasis — not
+  much larger. Rows that belong together are centred together or share a left
+  edge; values meant to be compared are lined up digit under digit.
+- **Even spacing.** A line between two groups sits exactly halfway between them
+  (measure the real text edges, don't guess).
+- **Centre the key result** (e.g. "off by 0.019 %") and put the main reference line
+  (e.g. π = 3.14159…) centred under the title.
+- **Fewer lines beat more lines.** Drop readouts that repeat what another shows
+  (the reel dropped "estimate =" once "off by %" was there).
+- **Show intuitive measures, not raw values.** When values converge (3, 3.1,
+  3.14…), plot the **distance from the goal in percent on a log scale**, labelled
+  "(lower = closer)", and write the percentage next to each point. Points sitting on
+  top of a line show nothing.
+- **Leave space** between text blocks and graphs; never let labels touch lines,
+  points or other labels.
+
+## Motion and timing
+
+- **One change at a time.** When a run ends, the result appears first (a
+  noticeable pop), **holds about 1 s**, then disappears as the next setting (e.g. a
+  new M/m) appears. Never change the result and the setting in the same moment.
+- When something happens too fast to see, use **labelled slow motion**
+  ("slow motion ×11,000"), never unlabelled time tricks.
+
+## Sound
+
+- Sound is **gentle background**: no loud bangs or bells. Dense bursts (many
+  events per second), bells and closing chords must not be louder than single
+  events — they were "too loud" three rounds in a row.
+- Set **fixed levels** for each sound; do **not** normalise the track up to full
+  volume at the end (that undoes every reduction). Single event peak ≈ −12 dB,
+  continuous parts ≈ −33 dB average; measure before delivering.
+
+## Reels (vertical social videos)
+
+- **1080×1920 (9:16), about 30 s.** Shorten pauses and speed up motion rather than
+  cutting content.
+- Short **title on top** with the goal symbol in its goal colour, then the key
+  readouts, then the graph, then the 3D/system view at the bottom.
+- Keep everything out of the app overlays: top ≈ 220 px, bottom ≈ 380 px
+  (caption), right ≈ 140 px in the lower half (buttons). Check a still with these
+  zones drawn before rendering the video.
+- Finished reels go to Dropbox `PhysicaAid\Social\reels\` — only after Marianna
+  says so; replace an older copy only when she asks.
 
 ## Per tool
 

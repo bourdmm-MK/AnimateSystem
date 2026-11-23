@@ -11,6 +11,15 @@ script `models/<name>/build.py` that builds the scene from empty.
   colours — and finish with
   `physkit.finish(scene, name, args, style="question")` (flat colours on black).
   Use an orthographic front camera when reproducing a 2D figure.
+- **Question scenes shown in 3D:** `style="question3d"` — the same colours with
+  shaded faces. Lessons from `models/collision_pi` (Marianna liked the result):
+  - Render the **text/graph as a separate flat layer** over the shaded 3D layer
+    (ffmpeg overlay); one shared lighting makes the text grey and dim. 1080p with
+    32-sample anti-aliasing; brighten only the 3D layer (exposure ≈ +0.7).
+  - **Keep the camera level** (no tilt) so walls stand upright on the floor; frame
+    with the lens shift (`shift_y`), and move the text layer by
+    `shift_y × frame width` to keep it in place.
+  - Reels: `.\tools\run.ps1 <name> -mode preview -reel -resolution 1920`.
 - **3D object models** (a realistic pendulum, a cart): realistic materials from
   `physkit/materials.py`. Labels, vectors and axes added to them still follow
   the course colours.
