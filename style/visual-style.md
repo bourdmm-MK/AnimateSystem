@@ -21,12 +21,14 @@ Break a rule only when the user asks for something different for that piece of w
   `MathTex`/`Tex` in Manim; KaTeX/MathJax in HTML/SVG; real LaTeX in Blender
   (`physkit/latex.py`, Latin Modern for changing numbers). Serif italic
   (Times) only as a fallback when LaTeX is unavailable. Subscripts are real subscripts (`m_1`, `y_2`).
-- **Arrows over vector symbols depend on the problem** (user rule, 2026-11-24, applies
-  everywhere, magnetic force included). A **generic** problem (symbols only, no numbers)
-  writes vectors with an arrow (`\vec v`, `\vec B`, `\vec F = q\,\vec v \times \vec B`).
-  A problem whose parameters **have values** — the usual case — uses **no arrows** on labels,
-  cards or equations (`T`, `m_1 g`, `v`, `B`, `F = qvB\sin\alpha`). Unit vectors get a hat
-  (`\hat z`) in either case.
+- **Vector notation — when a symbol gets an arrow** (user rule, 2026-11-24, everywhere):
+  1. *Vector drawn as an arrow (polar form):* generic (no value) → `\vec F`; specific (has a value) → no arrow,
+     the letter is its magnitude (`v`, `B`, `F`, `m_1 g`).
+  2. *Cartesian form:* components have no arrow (`v_x`); a vector written as components gets one
+     (`\vec B = (1.2, 0, 0)\,T`).
+  3. *Vector maths* (cross/dot products, sums, any operation on vectors): `\vec` on every vector
+     (`\vec v \times \vec B`, `\vec F = q\,\vec v \times \vec B`), drawing labels included — unless the maths is on
+     magnitudes only and does not touch direction (`F = |q| v B \sin\alpha`). Unit vectors get a hat (`\hat z`).
 - **No shadows or glows** on bodies, labels or text unless they are specifically needed. (User rule, 2026-11-24.)
 - **HTML whiteboards really load KaTeX** (CSS + JS + auto-render from a CDN) and typeset
   every symbol with it — card text, equations and the labels in the 3D scene
