@@ -28,6 +28,8 @@ whiteboard, build the HTML board.
   found; a "current step" card; live readouts of changing quantities
   (for example `p_x`, `E`).
 
+- **Roomy line spacing:** ≈0.26em above and below each equation line (≈0.34em on a phone); frames never touch the next line. (User review, 2026-11-25.)
+- **General formulas in a red frame:** a symbols-only equation used before numbers are put into it (e.g. v² = v₀² + 2aΔx) is framed in red (#FC6255); the final answer is framed in green. (User rule, 2026-11-25.)
 - **The solution comes after the animation:** each step's equations fade in only once its animation has finished. (User rule, 2026-11-25.)
 - **Mass label inside each body:** KaTeX `m_1`, `m_2` (true subscript), black, sized from the box — at most ¾ of its width and 80% of its height, never touching the edges; recomputed on resize and in the phone view. (User review, 2026-11-25.)
 - **Each body is filled with its own colour** (m₁ pink, m₂ blue; label inside black), and **the drawing copies the question's figure** (which body on which side, what holds the pulleys, where the floor is). (User review, 2026-11-25.)
