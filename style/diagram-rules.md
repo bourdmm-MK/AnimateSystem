@@ -38,6 +38,10 @@ parts (session whiteboards, teach/solve modes).
   what is being taught.
 - **Multi-stage problems:** dim what belongs to other stages, remove what is
   used up, keep the quantity that links two stages fully visible.
+- **Labels never jump and sit beside their own vector**: one fixed spot per label for the whole board (chosen once, clear in every step), right
+  beside its arrow; during motion it rides along with its object (crossing lines is fine, no wiggling). Axes cover each body's whole motion.
+  Choose label spots with labels measured 6% larger (real phones render fonts a little bigger). Force and acceleration arrows are
+  representational: proportional to each other but long enough to be clearly visible. (User review, 2026-11-25.)
 - **Labels never overlap each other and never cross the drawing's edge** — check this at every size the board
   is shown (phone sizes make labels relatively larger). (User review, 2026-11-24.)
 - **Moving labels may cross dashed lines.** While a body moves in an animation, its labels ride along and may pass through (or hop above) a dashed line; the no-touch rule is checked on each step's still frame. (User rule, 2026-11-24.)

@@ -67,6 +67,8 @@ give each one its **own strong colour** (e.g. big `M` blue `#58C4DD`, small `m`
 yellow `#F7D96F`) and colour **its symbol the same way everywhere** (in M/m, on axis
 names, in equations). Labels inside the bodies stay black. All-sand scenes look
 too bland.
+**The body itself is always filled with its colour** (user review, 2026-11-25) — the colours in the text only make sense if the blocks carry them.
+**Mass labels inside bodies** are LaTeX with a true subscript (m₁, never "m1"), black, and as large as the box allows — at most ¾ of its width and 80% of its height, never touching its edges (user review, 2026-11-25).
 **On whiteboards with equations** (user rule, 2026-11-24) the body colour is used only where it tells
 which body something belongs to: the tag before each equation of motion ("m₁:" pink, "m₂:" blue) and
 each body's axis name (x₁, x₂ — in the equations' axes line and at the axis tips; axis lines stay green).
