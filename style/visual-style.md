@@ -21,10 +21,13 @@ Break a rule only when the user asks for something different for that piece of w
   `MathTex`/`Tex` in Manim; KaTeX/MathJax in HTML/SVG; real LaTeX in Blender
   (`physkit/latex.py`, Latin Modern for changing numbers). Serif italic
   (Times) only as a fallback when LaTeX is unavailable. Subscripts are real subscripts (`m_1`, `y_2`).
-- **Vectors carry an arrow** (`\vec v`, `\vec B`, `\vec F`) wherever the symbol means
-  the vector — labels on arrows, vector equations (`\vec F = q\,\vec v \times \vec B`),
-  components (`\vec v = (3.2,\,2.4,\,0)`). A **magnitude has no arrow** (`F = qvB\sin\alpha`,
-  `v = 4\cdot10^7` m/s). Unit vectors get a hat (`\hat z`). (User rule, 2026-11-24.)
+- **Arrows over vector symbols depend on the problem** (user rule, 2026-11-24, applies
+  everywhere, magnetic force included). A **generic** problem (symbols only, no numbers)
+  writes vectors with an arrow (`\vec v`, `\vec B`, `\vec F = q\,\vec v \times \vec B`).
+  A problem whose parameters **have values** — the usual case — uses **no arrows** on labels,
+  cards or equations (`T`, `m_1 g`, `v`, `B`, `F = qvB\sin\alpha`). Unit vectors get a hat
+  (`\hat z`) in either case.
+- **No shadows or glows** on bodies, labels or text unless they are specifically needed. (User rule, 2026-11-24.)
 - **HTML whiteboards really load KaTeX** (CSS + JS + auto-render from a CDN) and typeset
   every symbol with it — card text, equations and the labels in the 3D scene
   (`katex.renderToString`). Listing a KaTeX font in CSS without loading KaTeX is not
@@ -81,6 +84,9 @@ heading (collision_pi uses teal). The "distance from the goal" readout
   they are (velocity yellow, acceleration teal, forces red…), starting on the
   body. Curved arrows only for real rotations, and always labelled.
 - **Angles:** a thin arc in `GRAY_A`, the label inside the angle.
+- **Measured lengths show their starting point:** a dashed reference line at the level a height
+  or distance is measured from (e.g. the bottom of the body at its start), plus the dimension line.
+  No unexplained marks (a lone "0" at an axis origin). (User rule, 2026-11-24.)
 - **Guide lines** (projections, distances, dimensions): dashed, `GRAY_A`,
   behind the objects.
 - **Charges:** circles marked + (red) or − (blue). Field into the page ×, out
@@ -93,6 +99,8 @@ heading (collision_pi uses teal). The "distance from the goal" readout
 
 ## Layout
 
+- **An object's values sit next to the object** (live readouts, its labels), moving with it — best as the label of its
+  own arrow; never in a far corner. (User rule, 2026-11-24.)
 - **Mass labels go inside their body** (`m₁` inside block 1), sized to fit. Make
   the body big enough; put the label beside it only if it truly cannot fit.
 - **Axes, dashed guide lines and helper arrows are drawn behind the objects**, so

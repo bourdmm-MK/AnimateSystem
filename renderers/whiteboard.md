@@ -24,7 +24,7 @@ whiteboard, build the HTML board.
 
 ## Cards and readouts
 
-- Hebrew cards: givens in green; unknowns in red, turning green with ✓ once
+- Cards in the question's language (English question → English board, Hebrew → Hebrew): givens in green; unknowns in red, turning green with ✓ once
   found; a "current step" card; live readouts of changing quantities
   (for example `p_x`, `E`).
 

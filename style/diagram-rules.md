@@ -28,13 +28,17 @@ parts (session whiteboards, teach/solve modes).
   mistake was repeated, so it is checked explicitly). Place each label in open space
   between lines, close to what it names. Whenever a label is placed or **moved**,
   check its whole box against **every** line around it, not only the object it was
-  moved away from.
+  moved away from. HTML whiteboards do this automatically with PhysicsLearn
+  `tools/whiteboard/labels.js` (check every step, place crowded labels in the
+  nearest clear spot); in Manim and Blender, check each label against nearby lines
+  in the rendered frame before showing it.
 - **Axes contain the drawing** — the whole trajectory and every arrow.
 - **Draw only what the step needs.** One vector per quantity at the object of
   interest; no decorative field-line forests unless the spatial picture is
   what is being taught.
 - **Multi-stage problems:** dim what belongs to other stages, remove what is
   used up, keep the quantity that links two stages fully visible.
+- **Moving labels may cross dashed lines.** While a body moves in an animation, its labels ride along and may pass through (or hop above) a dashed line; the no-touch rule is checked on each step's still frame. (User rule, 2026-11-24.)
 
 ## Reproducing a given figure (from a picture)
 
