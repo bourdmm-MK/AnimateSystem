@@ -111,6 +111,13 @@ heading (collision_pi uses teal). The "distance from the goal" readout
   they never cover the system. Text sits in front.
 - Never hide a given, label or angle mark; vectors start on their body (full rules in
   [`diagram-rules.md`](diagram-rules.md)).
+- **3D views are seen from above and in front** (user review, 2026-11-24). A picture without perspective can be read
+  two ways — from above or from below — and the eye always assumes "from above". Flat things (vectors in the board's
+  plane) look the same either way, but anything that sticks out of the plane (the z axis, a force out of the page)
+  looks flipped if the camera is below. So: camera above (y > 0) and in front (z > 0), e.g. (5, 6, 10) with y up;
+  then look at the 3D view and check x × y = z by the right hand and that each out-of-plane arrow matches its ⊙/⊗.
+  Applies to Manim 3D scenes, Blender cameras and whiteboards alike. The maths being right is not enough — the
+  picture must read right.
 - A "whiteboard" means building the picture step by step (drawing it in, then
   adding to it) — **in this same style**, not a white background or handwriting.
 
