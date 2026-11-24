@@ -38,6 +38,8 @@ parts (session whiteboards, teach/solve modes).
   what is being taught.
 - **Multi-stage problems:** dim what belongs to other stages, remove what is
   used up, keep the quantity that links two stages fully visible.
+- **Labels never overlap each other and never cross the drawing's edge** — check this at every size the board
+  is shown (phone sizes make labels relatively larger). (User review, 2026-11-24.)
 - **Moving labels may cross dashed lines.** While a body moves in an animation, its labels ride along and may pass through (or hop above) a dashed line; the no-touch rule is checked on each step's still frame. (User rule, 2026-11-24.)
 
 ## Reproducing a given figure (from a picture)

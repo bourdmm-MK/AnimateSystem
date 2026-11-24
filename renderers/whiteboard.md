@@ -33,6 +33,9 @@ whiteboard, build the HTML board.
 - **One line per equation:** never split an equation unless the whole line would make the equation text
   smaller than 15 px. (User rule, 2026-11-24.)
 - **Equation size fixed per board:** chosen once from the fullest step; it never changes between steps.
+- **Phone or computer, the viewer chooses:** a chooser on opening (remembered, switchable); the phone view
+  stacks drawing over equations; the equations panel is a plain scrolling list (no CSS columns) that jumps to
+  the newest lines; phone drawing: bodies 20% smaller, arrows and labels larger. (User rule, 2026-11-24.)
 - **No key/legend card** — everything is labelled on the board. (User rule, 2026-11-24.)
 - **One screen, no scrolling:** header + drawing + a compact cards row (≈26vh) fill the window; the
   drawing (its own shape) and an equations panel share the rest of the width edge to edge, the
