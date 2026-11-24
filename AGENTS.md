@@ -13,6 +13,8 @@ animation.
 - **Before drawing anything**, read [`style/visual-style.md`](style/visual-style.md)
   and [`style/diagram-rules.md`](style/diagram-rules.md), then follow
   [`workflow/text-or-picture-to-animation.md`](workflow/text-or-picture-to-animation.md).
+- **Whiteboards:** before showing one, go through PhysicsLearn `knowledge-base/whiteboard-checklist.md`
+  (required; it collects every board rule from Marianna's reviews).
 - **Give a time estimate before rendering** (speeds are in the workflow file).
 - **Keep the copies in step.** The style exists in three places:
   1. here — `style/visual-style.md` and `tokens/style.json` (the master),

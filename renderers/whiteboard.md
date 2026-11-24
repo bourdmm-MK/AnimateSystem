@@ -28,6 +28,17 @@ whiteboard, build the HTML board.
   found; a "current step" card; live readouts of changing quantities
   (for example `p_x`, `E`).
 
+- **Body colours, only where they tell which body:** the "m₁:" / "m₂:" tag before each equation of motion
+  and the axis names x₁, x₂ (equations' axes line + axis tips in the drawing). Nothing else coloured.
+- **One line per equation:** never split an equation unless the whole line would make the equation text
+  smaller than 15 px. (User rule, 2026-11-24.)
+- **Equation size fixed per board:** chosen once from the fullest step; it never changes between steps.
+- **No key/legend card** — everything is labelled on the board. (User rule, 2026-11-24.)
+- **One screen, no scrolling:** header + drawing + a compact cards row (≈26vh) fill the window; the
+  drawing (its own shape) and an equations panel share the rest of the width edge to edge, the
+  equations auto-sized as large as fits (one or two columns); card text `clamp(15px,1.15vw,24px)`, drawing text scales with
+  the drawing. (User rule, 2026-11-24.)
+
 ## Known quirks
 
 - **KaTeX inside Hebrew (RTL) cards comes out mirrored** unless you add

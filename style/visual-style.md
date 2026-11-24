@@ -65,6 +65,10 @@ give each one its **own strong colour** (e.g. big `M` blue `#58C4DD`, small `m`
 yellow `#F7D96F`) and colour **its symbol the same way everywhere** (in M/m, on axis
 names, in equations). Labels inside the bodies stay black. All-sand scenes look
 too bland.
+**On whiteboards with equations** (user rule, 2026-11-24) the body colour is used only where it tells
+which body something belongs to: the tag before each equation of motion ("m₁:" pink, "m₂:" blue) and
+each body's axis name (x₁, x₂ — in the equations' axes line and at the axis tips; axis lines stay green).
+Other m₁, m₂ in equations and text stay plain.
 
 **One colour for the goal.** A target value the video is about (π, g, a final
 answer) gets one colour used everywhere it appears: title, readout, graph
